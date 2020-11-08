@@ -1,21 +1,21 @@
 <?php
 
-namespace Shetabit\Payment\Tests;
+namespace Aminmohammadmazreali\Payment\Tests;
 
 use Orchestra\Testbench\TestCase as BaseTestCase;
-use Shetabit\Payment\Tests\Mocks\Drivers\BarDriver;
+use Aminmohammadmazreali\Payment\Tests\Mocks\Drivers\BarDriver;
 
 class TestCase extends BaseTestCase
 {
     protected function getPackageProviders($app)
     {
-        return ['Shetabit\Payment\Provider\PaymentServiceProvider'];
+        return ['Aminmohammadmazreali\Payment\Provider\PaymentServiceProvider'];
     }
 
     protected function getPackageAliases($app)
     {
         return [
-            'Payment' => 'Shetabit\Payment\Facade\Payment',
+            'Payment' => 'Aminmohammadmazreali\Payment\Facade\Payment',
         ];
     }
 

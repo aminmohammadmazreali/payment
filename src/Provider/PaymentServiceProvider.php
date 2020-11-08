@@ -1,11 +1,11 @@
 <?php
 
-namespace Shetabit\Payment\Provider;
+namespace Aminmohammadmazreali\Payment\Provider;
 
-use Shetabit\Multipay\Payment;
+use Aminmohammadmazreali\Multipay\Payment;
 use Illuminate\Support\ServiceProvider;
-use Shetabit\Payment\Events\InvoicePurchasedEvent;
-use Shetabit\Payment\Events\InvoiceVerifiedEvent;
+use Aminmohammadmazreali\Payment\Events\InvoicePurchasedEvent;
+use Aminmohammadmazreali\Payment\Events\InvoiceVerifiedEvent;
 
 class PaymentServiceProvider extends ServiceProvider
 {

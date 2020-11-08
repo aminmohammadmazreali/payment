@@ -1798,7 +1798,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Shetabit\\Multipay\\": "src"
+                    "Aminmohammadmazreali\\Multipay\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",

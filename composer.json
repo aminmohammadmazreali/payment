@@ -99,12 +99,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Shetabit\\Payment\\": "src"
+            "Aminmohammadmazreali\\Payment\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Shetabit\\Payment\\Tests\\": "tests"
+            "Aminmohammadmazreali\\Payment\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -115,10 +115,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Shetabit\\Payment\\Provider\\PaymentServiceProvider"
+                "Aminmohammadmazreali\\Payment\\Provider\\PaymentServiceProvider"
             ],
             "aliases": {
-                "Payment": "Shetabit\\Payment\\Facade\\Payment"
+                "Payment": "Aminmohammadmazreali\\Payment\\Facade\\Payment"
             }
         }
     },

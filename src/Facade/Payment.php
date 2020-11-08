@@ -1,13 +1,13 @@
 <?php
 
-namespace Shetabit\Payment\Facade;
+namespace Aminmohammadmazreali\Payment\Facade;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * Class Payment
  *
- * @package Shetabit\Payment\Facade
+ * @package Aminmohammadmazreali\Payment\Facade
  */
 class Payment extends Facade
 {

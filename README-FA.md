@@ -95,13 +95,13 @@ $ composer require shetabit/payment
 // In your providers array.
 'providers' => [
     ...
-    Shetabit\Payment\Provider\PaymentServiceProvider::class,
+    Aminmohammadmazreali\Payment\Provider\PaymentServiceProvider::class,
 ],
 
 // In your aliases array.
 'aliases' => [
     ...
-    'Payment' => Shetabit\Payment\Facade\Payment::class,
+    'Payment' => Aminmohammadmazreali\Payment\Facade\Payment::class,
 ],
 ```
 
@@ -156,7 +156,7 @@ $ composer require shetabit/payment
 
 ```php
 // At the top of the file.
-use Shetabit\Multipay\Invoice;
+use Aminmohammadmazreali\Multipay\Invoice;
 ...
 
 // Create new invoice.
@@ -201,8 +201,8 @@ $invoice->detail('detailName1','your detail1 goes here')
 
 ```php
 // At the top of the file.
-use Shetabit\Multipay\Invoice;
-use Shetabit\Payment\Facade\Payment;
+use Aminmohammadmazreali\Multipay\Invoice;
+use Aminmohammadmazreali\Payment\Facade\Payment;
 ...
 
 // Create new invoice.
@@ -237,8 +237,8 @@ Payment::callbackUrl('http://yoursite.com/verify')->purchase(
 
 ```php
 // At the top of the file.
-use Shetabit\Multipay\Invoice;
-use Shetabit\Payment\Facade\Payment;
+use Aminmohammadmazreali\Multipay\Invoice;
+use Aminmohammadmazreali\Payment\Facade\Payment;
 ...
 
 // Create new invoice.
@@ -279,8 +279,8 @@ return Payment::purchase(
 
 ```php
 // At the top of the file.
-use Shetabit\Payment\Facade\Payment;
-use Shetabit\Multipay\Exceptions\InvalidPaymentException;
+use Aminmohammadmazreali\Payment\Facade\Payment;
+use Aminmohammadmazreali\Multipay\Exceptions\InvalidPaymentException;
 ...
 
 // You need to verify the payment to ensure the invoice has been paid successfully.
@@ -326,7 +326,7 @@ try {
 <div dir="rtl">
 
 
-کلاس درایوری که قصد ساختنش رو دارید باید کلاس `Shetabit\Payment\Abstracts\Driver` رو به ارث ببره.
+کلاس درایوری که قصد ساختنش رو دارید باید کلاس `Aminmohammadmazreali\Payment\Abstracts\Driver` رو به ارث ببره.
 
 به عنوان مثال:
 
@@ -335,9 +335,9 @@ try {
 ```php
 namespace App\Packages\PaymentDriver;
 
-use Shetabit\Multipay\Abstracts\Driver;
-use Shetabit\Multipay\Exceptions\InvalidPaymentException;
-use Shetabit\Multipay\{Contracts\ReceiptInterface, Invoice, Receipt};
+use Aminmohammadmazreali\Multipay\Abstracts\Driver;
+use Aminmohammadmazreali\Multipay\Exceptions\InvalidPaymentException;
+use Aminmohammadmazreali\Multipay\{Contracts\ReceiptInterface, Invoice, Receipt};
 
 class MyDriver extends Driver
 {
@@ -421,8 +421,8 @@ class MyDriver extends Driver
 
   ```php
   // At the top of the file.
-  use Shetabit\Multipay\Invoice;
-  use Shetabit\Payment\Facade\Payment;
+  use Aminmohammadmazreali\Multipay\Invoice;
+  use Aminmohammadmazreali\Payment\Facade\Payment;
   ...
   
   // Create new invoice.
@@ -445,8 +445,8 @@ class MyDriver extends Driver
 
   ```php
   // At the top of the file.
-  use Shetabit\Multipay\Invoice;
-  use Shetabit\Payment\Facade\Payment;
+  use Aminmohammadmazreali\Multipay\Invoice;
+  use Aminmohammadmazreali\Payment\Facade\Payment;
   ...
   
   // Purchase (we set invoice to null).
@@ -466,8 +466,8 @@ class MyDriver extends Driver
 
   ```php
   // At the top of the file.
-  use Shetabit\Multipay\Invoice;
-  use Shetabit\Payment\Facade\Payment;
+  use Aminmohammadmazreali\Multipay\Invoice;
+  use Aminmohammadmazreali\Payment\Facade\Payment;
   ...
   
   // Create new invoice.
